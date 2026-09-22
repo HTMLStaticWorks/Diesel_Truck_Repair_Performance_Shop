@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torque Diesel Performance | Heavy-Duty Truck Repair</title>
+    <meta name="description"
+        content="Premium diesel truck repair, performance tuning, and heavy-duty diagnostics. Experience industrial-strength service for your vehicle.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"
+                style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">
+                <!-- Simple vector logo for diesel/gear -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    style="width: 30px; height: 30px; fill: var(--accent);">
+                    <path
+                        d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                </svg>
+                TORQUE
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="brands.html">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="header-controls mt-3 mt-lg-0">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon theme-icon-light"></i>
+                        <i class="fa-solid fa-sun theme-icon-dark"></i>
+                    </button>
+                    <!-- RTL Toggle (using icon) -->
+                    <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <a href="contact.html" class="btn btn-primary-custom ms-lg-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="overflow-x: hidden; width: 100%;">
+
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Section 1 - Hero -->
+            <section class="hero-section position-relative"
+                style="min-height: 85vh; display: flex; align-items: center; background-color: var(--primary); overflow: hidden;">
+                <div class="position-absolute w-100 h-100" style="z-index: 1;">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1920&q=80"
+                        alt="Diesel Truck in Workshop" class="img-cover opacity-50"
+                        style="animation: scaleReveal 10s infinite alternate;">
+                </div>
+                <div class="container position-relative" style="z-index: 2;">
+                    <div class="row">
+                        <div class="col-lg-8 text-light">
+                            <div class="d-inline-block bg-accent px-3 py-1 mb-4 fw-bold text-uppercase"
+                                style="background-color: var(--accent); letter-spacing: 2px;">
+                                <i class="fa-solid fa-shield-halved me-2"></i> Elite Diesel Performance
+                            </div>
+                            <h1 class="display-3 fw-bold mb-4 reveal text-light"
+                                style="font-family: var(--font-heading);">UNLEASH YOUR TRUCK'S<br><span
+                                    class="text-accent">TRUE POTENTIAL</span></h1>
+                            <p class="lead mb-5 reveal"
+                                style="max-width: 600px; color: #d1d5db; transition-delay: 0.1s;">Expert diagnostics,
+                                heavy-duty repair, and custom performance tuning for diesel trucks. We build power,
+                                reliability, and efficiency.</p>
+                            <div class="d-flex flex-wrap gap-3 reveal" style="transition-delay: 0.2s;">
+                                <a href="contact.html" class="btn btn-primary-custom btn-lg">Book a Service <i
+                                        class="fa-solid fa-arrow-right ms-2"></i></a>
+                                <a href="services.html" class="btn btn-outline-light btn-lg"
+                                    style="font-family: var(--font-heading); font-weight: 700; text-transform: uppercase;">Explore
+                                    Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 - Diesel Expertise -->
+            <section class="section-padding bg-main">
+                <div class="container">
+                    <div class="text-center mb-5 reveal">
+                        <h2 class="mb-3">Our Diesel <span class="text-accent">Expertise</span></h2>
+                        <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Precision engineering meets
+                            rugged durability. We specialize in comprehensive solutions for modern diesel engines.</p>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <!-- Feature 1 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card-custom p-4 h-100 text-center reveal-left stagger-item">
+                                <div class="icon-wrapper mb-3" style="font-size: 3rem; color: var(--accent);">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                                <h5 class="mb-3 fw-bold text-uppercase">Performance Tuning</h5>
+                                <p class="text-muted mb-0">Custom ECU calibration to maximize torque, horsepower, and
+                                    fuel efficiency.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card-custom p-4 h-100 text-center reveal-right stagger-item">
+                                <div class="icon-wrapper mb-3" style="font-size: 3rem; color: var(--accent);">
+                                    <i class="fa-solid fa-laptop-medical"></i>
+                                </div>
+                                <h5 class="mb-3 fw-bold text-uppercase">Diesel Diagnostics</h5>
+                                <p class="text-muted mb-0">Advanced computer scanning and pinpoint electrical
+                                    troubleshooting.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card-custom p-4 h-100 text-center reveal-left stagger-item">
+                                <div class="icon-wrapper mb-3" style="font-size: 3rem; color: var(--accent);">
+                                    <i class="fa-solid fa-gears"></i>
+                                </div>
+                                <h5 class="mb-3 fw-bold text-uppercase">Heavy-Duty Repair</h5>
+                                <p class="text-muted mb-0">From transmissions to turbos, full mechanical overhauls and
+                                    rebuilds.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card-custom p-4 h-100 text-center reveal-right stagger-item">
+                                <div class="icon-wrapper mb-3" style="font-size: 3rem; color: var(--accent);">
+                                    <i class="fa-solid fa-smog"></i>
+                                </div>
+                                <h5 class="mb-3 fw-bold text-uppercase">Emissions Solutions</h5>
+                                <p class="text-muted mb-0">DPF, EGR, and exhaust system maintenance to keep you
+                                    compliant and running.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 - Core Services -->
+            <section class="section-padding bg-card border-top border-bottom"
+                style="border-color: var(--border-color) !important;">
+                <div class="container">
+                    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal">
+                        <div>
+                            <h2 class="mb-2">Core <span class="text-accent">Services</span></h2>
+                            <p class="text-muted mb-0">Everything your heavy-duty truck needs under one roof.</p>
+                        </div>
+                        <a href="services.html" class="btn btn-outline-custom mt-3 mt-md-0">View All Services</a>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Service 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                                <div class="position-relative overflow-hidden" style="height: 240px;">
+                                    <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        class="img-cover transition-transform" alt="Engine Diagnostics"
+                                        style="transition: transform 0.5s ease;">
+                                </div>
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h5 class="mb-3 fw-bold text-uppercase">Engine Diagnostics</h5>
+                                    <p class="text-muted mb-4">Complete health check and fault code analysis for all
+                                        major diesel platforms.</p>
+                                    <a href="services.html"
+                                        class="text-accent fw-bold text-decoration-none text-uppercase mt-auto"
+                                        style="font-family: var(--font-heading);">Learn More <i
+                                            class="fa-solid fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                                <div class="position-relative overflow-hidden" style="height: 240px;">
+                                    <img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        class="img-cover transition-transform" alt="Turbo & Fuel Systems"
+                                        style="transition: transform 0.5s ease;">
+                                </div>
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h5 class="mb-3 fw-bold text-uppercase">Turbo & Fuel Systems</h5>
+                                    <p class="text-muted mb-4">Injector replacements, turbo upgrades, and high-pressure
+                                        fuel pump repairs.</p>
+                                    <a href="services.html"
+                                        class="text-accent fw-bold text-decoration-none text-uppercase mt-auto"
+                                        style="font-family: var(--font-heading);">Learn More <i
+                                            class="fa-solid fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                                <div class="position-relative overflow-hidden" style="height: 240px;">
+                                    <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        class="img-cover transition-transform" alt="Preventive Maintenance"
+                                        style="transition: transform 0.5s ease;">
+                                </div>
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h5 class="mb-3 fw-bold text-uppercase">Maintenance</h5>
+                                    <p class="text-muted mb-4">Fluid changes, filter replacements, and rigorous
+                                        multi-point inspections.</p>
+                                    <a href="services.html"
+                                        class="text-accent fw-bold text-decoration-none text-uppercase mt-auto"
+                                        style="font-family: var(--font-heading);">Learn More <i
+                                            class="fa-solid fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 - Performance Showcase -->
+            <section class="section-padding bg-dark text-light position-relative"
+                style="background-color: var(--primary);">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+                            <div class="position-relative rounded overflow-hidden"
+                                style="border: 4px solid var(--secondary);">
+                                <img src="https://images.pexels.com/photos/1386649/pexels-photo-1386649.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    alt="Performance Tuning Dyno" class="img-fluid w-100">
+                                <!-- Overlay accent -->
+                                <div class="position-absolute bottom-0 start-0 w-100 p-4"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                    <h4 class="text-light mb-0" style="font-family: var(--font-heading);">PROVEN POWER
+                                        GAINS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 reveal-right">
+                            <h2 class="mb-4 text-light">UNCOMPROMISING <span class="text-accent">PERFORMANCE</span></h2>
+                            <p class="text-muted mb-5" style="color: #9ca3af !important;">We don't just fix trucks; we
+                                optimize them. Our custom tuning solutions are engineered to deliver massive torque
+                                improvements while maintaining daily reliability and towing capability.</p>
+
+                            <div class="d-flex flex-column gap-4 mb-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-accent rounded-circle d-flex align-items-center justify-content-center text-white"
+                                        style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--accent);">
+                                        <i class="fa-solid fa-gauge-high"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h3 class="mb-1 text-light">+150 HP</h3>
+                                        <p class="text-muted mb-0" style="color: #9ca3af !important;">Average Power
+                                            Increase</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-accent rounded-circle d-flex align-items-center justify-content-center text-white"
+                                        style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--accent);">
+                                        <i class="fa-solid fa-weight-hanging"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h3 class="mb-1 text-light">+300 TQ</h3>
+                                        <p class="text-muted mb-0" style="color: #9ca3af !important;">Massive Torque
+                                            Gains</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-accent rounded-circle d-flex align-items-center justify-content-center text-white"
+                                        style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--accent);">
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h3 class="mb-1 text-light">10-15%</h3>
+                                        <p class="text-muted mb-0" style="color: #9ca3af !important;">Improved Fuel
+                                            Efficiency</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="pricing.html" class="btn btn-primary-custom">View Tuning Packages</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 5 - Why Choose Us -->
+            <section class="section-padding bg-main">
+                <div class="container">
+                    <div class="row text-center mb-5 reveal">
+                        <div class="col-12">
+                            <h2 class="mb-3">Why Trust <span class="text-accent">Torque Diesel?</span></h2>
+                            <p class="text-muted mx-auto" style="max-width: 600px;">We deliver industrial-grade
+                                solutions with unmatched transparency and technical expertise.</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row g-0 rounded overflow-hidden shadow-lg border"
+                                style="border-color: var(--border-color) !important;">
+                                <div class="col-lg-6 d-flex flex-column justify-content-center p-4 bg-card reveal-left">
+                                    <ul class="list-unstyled mb-0 d-flex flex-column gap-4">
+                                        <li class="d-flex align-items-start">
+                                            <i class="fa-solid fa-check-circle text-accent mt-1 fs-4 me-3"></i>
+                                            <div>
+                                                <h5 class="mb-1">Certified Master Technicians</h5>
+                                                <p class="text-muted mb-0">Our team has decades of combined experience
+                                                    on Cummins, Powerstroke, and Duramax platforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="fa-solid fa-check-circle text-accent mt-1 fs-4 me-3"></i>
+                                            <div>
+                                                <h5 class="mb-1">Advanced Diagnostic Tech</h5>
+                                                <p class="text-muted mb-0">We use dealer-level software to pinpoint
+                                                    problems accurately without guesswork.</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="fa-solid fa-check-circle text-accent mt-1 fs-4 me-3"></i>
+                                            <div>
+                                                <h5 class="mb-1">Transparent Pricing</h5>
+                                                <p class="text-muted mb-0">No hidden fees. We explain every repair
+                                                    before any wrench is turned.</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="fa-solid fa-check-circle text-accent mt-1 fs-4 me-3"></i>
+                                            <div>
+                                                <h5 class="mb-1">Premium OEM & Aftermarket Parts</h5>
+                                                <p class="text-muted mb-0">We only install heavy-duty, high-quality
+                                                    components designed to outlast the original.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 reveal-right">
+                                    <img src="https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=900"
+                                        alt="Mechanic in Workshop" class="img-cover" style="min-height: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6 - Final CTA -->
+            <section class="section-padding position-relative text-center text-light"
+                style="background-color: var(--primary);">
+                <div class="container position-relative z-index-2 reveal">
+                    <h2 class="display-5 fw-bold mb-4 text-light" style="font-family: var(--font-heading);">KEEP YOUR
+                        DIESEL <span class="text-accent">RUNNING STRONG</span></h2>
+                    <p class="lead mb-5" style="max-width: 700px; margin: 0 auto; color: #d1d5db;">Whether it's routine
+                        maintenance, major repair, or performance upgrades, Torque Diesel is your trusted partner for
+                        the road ahead.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-primary-custom btn-lg">Book Service Now</a>
+                        <a href="tel:5551234567" class="btn btn-outline-light btn-lg"
+                            style="font-family: var(--font-heading); font-weight: 700; text-transform: uppercase;"><i
+                                class="fa-solid fa-phone me-2"></i> (555) 123-4567</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer-custom">
+            <div class="container">
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a class="navbar-brand mb-3 d-flex align-items-center gap-2" style="color: var(--text-main);"
+                            href="index.html"
+                            style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 30px; height: 30px; fill: var(--accent);">
+                                <path
+                                    d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5-.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                            </svg>
+                            TORQUE
+                        </a>
+                        <p>Premium diesel truck repair, diagnostics, and performance tuning for those who demand the
+                            best from their heavy-duty vehicles.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-muted fs-4 hover-accent" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="text-muted fs-4 hover-accent" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-muted fs-4 hover-accent" aria-label="YouTube"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="mb-3 text-uppercase fw-bold" style="letter-spacing: 1px; color: var(--accent);">Quick
+                            Links</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                            <li><a href="pricing.html">Pricing Guide</a></li>
+                            <li><a href="brands.html">Brands We Service</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="mb-3 text-uppercase fw-bold" style="letter-spacing: 1px; color: var(--accent);">Our
+                            Services</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="services.html">Engine Diagnostics</a></li>
+                            <li><a href="services.html">Performance Tuning</a></li>
+                            <li><a href="services.html">Heavy-Duty Repair</a></li>
+                            <li><a href="services.html">Turbo & Fuel Systems</a></li>
+                            <li><a href="services.html">Emissions Repair</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <h6 class="mb-3 text-uppercase fw-bold" style="letter-spacing: 1px; color: var(--accent);">
+                            Contact Info</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex">
+                                <i class="fa-solid fa-location-dot mt-1 me-3 text-accent"></i>
+                                <span class="text-muted">1234 Industrial Blvd,<br>Motor City, MI 48201</span>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fa-solid fa-phone mt-1 me-3 text-accent"></i>
+                                <span class="text-muted">(555) 123-4567</span>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fa-solid fa-envelope mt-1 me-3 text-accent"></i>
+                                <span class="text-muted">service@torquediesel.com</span>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fa-solid fa-clock mt-1 me-3 text-accent"></i>
+                                <span class="text-muted">Mon-Fri: 8AM - 6PM<br>Sat: 9AM - 2PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pt-4 border-top position-relative"
+                    style="border-color: var(--border-color) !important;">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 text-muted">&copy; 2026 Torque Diesel Performance. All rights reserved.</p>
+                    </div>
+                    <div
+                        class="col-md-6 text-center text-md-end mt-3 mt-md-0 d-flex align-items-center justify-content-center justify-content-md-end">
+                        <a href="#" class="text-muted hover-accent me-4 text-decoration-none">Privacy Policy</a>
+                        <a href="#" class="text-muted hover-accent me-4 text-decoration-none">Terms of Service</a>
+                        <a href="#" class="text-muted hover-accent"
+                            onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                            aria-label="Back to Top" title="Back to top"
+                            style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;"><i
+                                class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="../assets/js/main.js"></script>
+
+        <!-- Hover effect for cards -->
+        <style>
+            .card-custom:hover .img-cover.transition-transform {
+                transform: scale(1.05);
+            }
+
+            @keyframes scaleReveal {
+                from {
+                    transform: scale(1);
+                }
+
+                to {
+                    transform: scale(1.05);
+                }
+            }
+        </style>
+    </div>
+</body>
+
+</html>

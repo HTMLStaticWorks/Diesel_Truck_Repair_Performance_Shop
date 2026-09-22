@@ -1,0 +1,68 @@
+        <!-- Section 3 - Core Services -->
+        <section class="section-padding bg-card border-top border-bottom" style="border-color: var(--border-color) !important;">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal">
+                    <div>
+                        <h2 class="mb-2">Core <span class="text-accent">Services</span></h2>
+                        <p class="text-muted mb-0">Everything your heavy-duty truck needs under one roof.</p>
+                    </div>
+                    <a href="services.html" class="btn btn-outline-custom mt-3 mt-md-0">View All Services</a>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                            <div class="position-relative overflow-hidden" style="height: 240px;">
+                                <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-cover transition-transform" alt="Engine Diagnostics" style="transition: transform 0.5s ease;">
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <h5 class="mb-3 fw-bold text-uppercase">Engine Diagnostics</h5>
+                                <p class="text-muted mb-4">Complete health check and fault code analysis for all major diesel platforms.</p>
+                                <a href="services.html" class="text-accent fw-bold text-decoration-none text-uppercase mt-auto" style="font-family: var(--font-heading);">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                            <div class="position-relative overflow-hidden" style="height: 240px;">
+                                <img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-cover transition-transform" alt="Turbo & Fuel Systems" style="transition: transform 0.5s ease;">
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <h5 class="mb-3 fw-bold text-uppercase">Turbo & Fuel Systems</h5>
+                                <p class="text-muted mb-4">Injector replacements, turbo upgrades, and high-pressure fuel pump repairs.</p>
+                                <a href="services.html" class="text-accent fw-bold text-decoration-none text-uppercase mt-auto" style="font-family: var(--font-heading);">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="card-custom h-100 reveal stagger-item d-flex flex-column">
+                            <div class="position-relative overflow-hidden" style="height: 240px;">
+                                <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-cover transition-transform" alt="Preventive Maintenance" style="transition: transform 0.5s ease;">
+                            </div>
+                            <div class="p-4 d-flex flex-column flex-grow-1">
+                                <h5 class="mb-3 fw-bold text-uppercase">Preventive Maintenance</h5>
+                                <p class="text-muted mb-4">Fluid changes, filter replacements, and rigorous multi-point inspections.</p>
+                                <a href="services.html" class="text-accent fw-bold text-decoration-none text-uppercase mt-auto" style="font-family: var(--font-heading);">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 - Performance Showcase -->
+        <section class="section-padding bg-dark text-light position-relative" style="background-color: var(--primary);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+                        <div class="position-relative rounded overflow-hidden" style="border: 4px solid var(--secondary);">
+                            <img src="https://images.pexels.com/photos/1386649/pexels-photo-1386649.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Performance Tuning Dyno" class="img-fluid w-100">
+                            <!-- Overlay accent -->
+                            <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                <h4 class="text-light mb-0" style="font-family: var(--font-heading);">PROVEN POWER GAINS</h4>
+                            </div>
+                        </div>
+                    </div>
