@@ -103,112 +103,352 @@
                         diagnostic, repair, and tuning solutions.</p>
                 </div>
             </section>
-
-            <!-- Section 2 - Engine Diagnostics (Slide from bottom) -->
-            <section class="section-padding bg-main">
+            <!-- Section 1.5 - Interactive Category Quick Jump Bar -->
+            <nav class="service-nav-bar" aria-label="Services Category Navigation">
                 <div class="container">
-                    <div class="row align-items-center flex-row-reverse g-5">
-                        <div class="col-lg-6 reveal">
-                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800"
-                                alt="ECU Diagnostics" class="img-fluid rounded shadow-lg border"
-                                style="max-height: 400px; object-fit: cover; width: 100%; border-color: var(--border-color) !important;">
-                        </div>
-                        <div class="col-lg-6 reveal">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fa-solid fa-laptop-medical text-accent fs-2 me-3"></i>
-                                <h2 class="mb-0">Engine <span class="text-accent">Diagnostics</span></h2>
-                            </div>
-                            <p class="text-muted mb-4">We use state-of-the-art diagnostic equipment to interface
-                                directly with your truck's onboard computers. We don't just clear codes; we find the
-                                root cause.</p>
-
-                            <ul class="list-unstyled d-flex flex-column gap-3">
-                                <li class="d-flex align-items-start bg-card p-3 rounded border shadow-sm"
-                                    style="border-color: var(--border-color) !important;">
-                                    <i class="fa-solid fa-check text-accent mt-1 me-3"></i>
-                                    <div>
-                                        <h6 class="mb-1">ECU Diagnostics</h6>
-                                        <p class="text-muted small mb-0">Deep module scanning for Cummins, Powerstroke,
-                                            and Duramax.</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-start bg-card p-3 rounded border shadow-sm"
-                                    style="border-color: var(--border-color) !important;">
-                                    <i class="fa-solid fa-check text-accent mt-1 me-3"></i>
-                                    <div>
-                                        <h6 class="mb-1">Fuel-System Diagnostics</h6>
-                                        <p class="text-muted small mb-0">Injector balance rates, lift pump pressures,
-                                            and rail pressure testing.</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-start bg-card p-3 rounded border shadow-sm"
-                                    style="border-color: var(--border-color) !important;">
-                                    <i class="fa-solid fa-check text-accent mt-1 me-3"></i>
-                                    <div>
-                                        <h6 class="mb-1">Electrical Diagnostics</h6>
-                                        <p class="text-muted small mb-0">Pinpoint testing for shorts, grounds, and
-                                            sensor failures.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="service-nav-list justify-content-lg-center">
+                        <a href="#diagnostics" class="service-nav-btn active"><i class="fa-solid fa-laptop-medical"></i> Engine Diagnostics</a>
+                        <a href="#tuning" class="service-nav-btn"><i class="fa-solid fa-gauge-high"></i> Performance Tuning</a>
+                        <a href="#overhauls" class="service-nav-btn"><i class="fa-solid fa-gears"></i> Heavy-Duty Rebuilds</a>
+                        <a href="#emissions" class="service-nav-btn"><i class="fa-solid fa-smog"></i> Emissions &amp; DPF</a>
+                        <a href="#fleet" class="service-nav-btn"><i class="fa-solid fa-shield-halved"></i> Fleet Maintenance</a>
                     </div>
                 </div>
-            </section>
+            </nav>
 
-            <!-- Section 3 - Performance Tuning (Zoom Reveal) -->
-            <section class="section-padding bg-card border-top border-bottom"
-                style="border-color: var(--border-color) !important;">
+            <!-- Section 2 - Engine & Electrical Diagnostics (Diagnostic HUD Command Center) -->
+            <section id="diagnostics" class="section-padding bg-main">
                 <div class="container">
                     <div class="row align-items-center g-5">
-                        <div class="col-lg-6 zoom-reveal">
-                            <img src="https://images.pexels.com/photos/7541343/pexels-photo-7541343.jpeg"
-                                alt="Performance Tuning" class="img-fluid rounded shadow-lg border"
-                                style="max-height: 400px; object-fit: cover; width: 100%; border-color: var(--border-color) !important;">
-                        </div>
-                        <div class="col-lg-6 reveal">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fa-solid fa-gauge-high text-accent fs-2 me-3"></i>
-                                <h2 class="mb-0">Performance <span class="text-accent">Tuning</span></h2>
+                        <div class="col-lg-6 reveal-left">
+                            <div class="hud-visual-frame">
+                                <img src="assets/images/diagnostics.jpg" alt="Peterbilt Cab Computer Diagnostics"
+                                    class="img-fluid" loading="lazy">
+                                <div class="hud-overlay-badge hud-badge-top-left">
+                                    <span class="pulse-dot"></span><strong>LIVE BUS:</strong> J1939 CAN 2.0B CONNECTED
+                                </div>
+                                <div class="hud-overlay-badge hud-badge-bottom-right">
+                                    <i class="fa-solid fa-microchip text-accent me-2"></i>Cummins INSITE &amp; Ford IDS Active
+                                </div>
                             </div>
-                            <p class="text-muted mb-4">Unleash the hidden power of your engine with custom calibrations
-                                tailored for towing, daily driving, or maximum track performance.</p>
+                        </div>
+                        <div class="col-lg-6 reveal-right">
+                            <span class="spec-chip mb-3"><i class="fa-solid fa-bolt"></i> Zero Guesswork Diagnostics</span>
+                            <h2 class="mb-3">Engine &amp; Electrical <span class="text-accent">Diagnostics</span></h2>
+                            <p class="text-muted mb-4">We interface directly with your diesel engine's control modules using factory OEM tooling. We do not swap parts on hunch—we isolate sensor drift, harness faults, and hydraulic anomalies to solve root causes.</p>
 
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-main rounded border h-100"
-                                        style="border-color: var(--border-color) !important;">
-                                        <h6 class="mb-2"><i class="fa-solid fa-bolt text-accent me-2"></i> ECU Tuning
-                                        </h6>
-                                        <p class="text-muted small mb-0">Custom map adjustments for fuel, air, and
-                                            timing.</p>
+                            <!-- Interactive Diagnostic Accordion -->
+                            <div class="accordion service-accordion mb-4" id="diagAccordion">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingDiagOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDiagOne" aria-expanded="true" aria-controls="collapseDiagOne">
+                                            <i class="fa-solid fa-laptop-code text-accent me-2"></i> Factory OEM Scanning Depth
+                                        </button>
+                                    </h3>
+                                    <div id="collapseDiagOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingDiagOne" data-bs-parent="#diagAccordion">
+                                        <div class="accordion-body">
+                                            Full proprietary bidirectional control for <strong>Cummins INSITE™</strong>, <strong>Ford IDS/FDRS</strong>, <strong>GM Tech2/GDS2 (Duramax)</strong>, and <strong>Detroit DDDL</strong>. We execute cylinder cutout tests, high-pressure common rail ramp tests, and actuator health calibrations.
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-main rounded border h-100"
-                                        style="border-color: var(--border-color) !important;">
-                                        <h6 class="mb-2"><i class="fa-solid fa-weight-hanging text-accent me-2"></i>
-                                            Torque Optimization</h6>
-                                        <p class="text-muted small mb-0">Massive low-end grunt for heavy towing
-                                            applications.</p>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingDiagTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDiagTwo" aria-expanded="false" aria-controls="collapseDiagTwo">
+                                            <i class="fa-solid fa-triangle-exclamation text-accent me-2"></i> Common Symptoms Diagnosed
+                                        </button>
+                                    </h3>
+                                    <div id="collapseDiagTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingDiagTwo" data-bs-parent="#diagAccordion">
+                                        <div class="accordion-body">
+                                            Extended or no-crank conditions, sudden speed derates, limp mode triggering without active codes, injector balance rate spread exceeding &plusmn;4.0, and intermittent 5V reference sensor drops.
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-main rounded border h-100"
-                                        style="border-color: var(--border-color) !important;">
-                                        <h6 class="mb-2"><i class="fa-solid fa-fan text-accent me-2"></i> Turbo
-                                            Optimization</h6>
-                                        <p class="text-muted small mb-0">VGT adjustments for faster spool times and
-                                            lower EGTs.</p>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingDiagThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDiagThree" aria-expanded="false" aria-controls="collapseDiagThree">
+                                            <i class="fa-solid fa-clipboard-check text-accent me-2"></i> What Every Diagnostic Visit Includes
+                                        </button>
+                                    </h3>
+                                    <div id="collapseDiagThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingDiagThree" data-bs-parent="#diagAccordion">
+                                        <div class="accordion-body">
+                                            Complete DTC freeze-frame printout, digital scope waveform analysis, physical harness inspection, and a written line-item repair estimate with zero hidden fees.
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-main rounded border h-100"
+                            </div>
+
+                            <!-- Diagnostic Action Bar -->
+                            <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+                                <a href="#inquiry-section" class="btn btn-primary-custom book-service-trigger" data-service="diagnostic">
+                                    <i class="fa-solid fa-calendar-check me-2"></i>Book Diagnostics
+                                </a>
+                                <a href="pricing.html" class="btn btn-outline-custom">
+                                    <i class="fa-solid fa-tag me-2"></i>View Pricing Packages
+                                </a>
+                            </div>
+
+                            <!-- Related Services Tags -->
+                            <div class="related-services-wrap">
+                                <span class="small fw-bold text-uppercase text-muted me-2">Frequently Paired:</span>
+                                <a href="#tuning" class="related-service-tag">ECM Bench Calibration</a>
+                                <a href="#overhauls" class="related-service-tag">Injector Flow Balancing</a>
+                                <a href="#emissions" class="related-service-tag">Sensor Harness Repair</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 - Performance Tuning Lab (Dynamic Stage Selector) -->
+            <section id="tuning" class="section-padding text-light position-relative"
+                style="background-color: var(--primary); overflow: hidden;">
+                <div class="container position-relative z-index-2">
+                    <div class="text-center mb-5 reveal">
+                        <span class="spec-chip mb-2" style="background: rgba(249,115,22,0.2);"><i class="fa-solid fa-gauge-high"></i> Dyno Calibrated Power</span>
+                        <h2 class="text-light mb-3">Performance <span class="text-accent">Tuning Lab</span></h2>
+                        <p class="text-muted mx-auto" style="max-width: 650px; color: #9ca3af !important;">Precision calibrations engineered for massive low-end torque, lowered EGTs, and uncompromising towing stamina.</p>
+                    </div>
+
+                    <div class="row g-4 align-items-center mb-5">
+                        <div class="col-lg-5 reveal-left">
+                            <div class="hud-visual-frame border-secondary">
+                                <img src="assets/images/service-turbo-fuel.jpg" alt="Diesel Turbocharger and Fuel Injector Tuning"
+                                    class="img-fluid" loading="lazy">
+                                <div class="hud-overlay-badge hud-badge-top-left" style="background: rgba(0,0,0,0.85);">
+                                    <i class="fa-solid fa-fire text-accent me-2"></i><strong>DYNO VERIFIED</strong> +300 TQ GAINS
+                                </div>
+                                <div class="hud-overlay-badge hud-badge-bottom-right" style="background: rgba(0,0,0,0.85);">
+                                    <span class="pulse-dot"></span>SOTF Multi-Position Maps
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 reveal-right">
+                            <!-- Interactive Stage Selector Cards -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <div class="stage-selector-card active" data-stage="1" tabindex="0" role="button" aria-label="Select Stage 1 Tow Tune">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge bg-accent text-white">Stage 1</span>
+                                            <i class="fa-solid fa-weight-hanging text-accent"></i>
+                                        </div>
+                                        <h6 class="mb-1 text-light">Heavy Towing</h6>
+                                        <div class="h5 text-accent fw-bold mb-1">+65 HP / +180 TQ</div>
+                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">Safe EGT control for heavy 5th-wheels.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stage-selector-card" data-stage="2" tabindex="0" role="button" aria-label="Select Stage 2 Street Tune">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge bg-secondary text-white">Stage 2</span>
+                                            <i class="fa-solid fa-road text-accent"></i>
+                                        </div>
+                                        <h6 class="mb-1 text-light">Street &amp; Daily</h6>
+                                        <div class="h5 text-accent fw-bold mb-1">+125 HP / +270 TQ</div>
+                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">Rapid turbo spool &amp; +12% MPG.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stage-selector-card" data-stage="3" tabindex="0" role="button" aria-label="Select Stage 3 Competition Tune">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge bg-secondary text-white">Stage 3</span>
+                                            <i class="fa-solid fa-trophy text-accent"></i>
+                                        </div>
+                                        <h6 class="mb-1 text-light">Competition</h6>
+                                        <div class="h5 text-accent fw-bold mb-1">+200+ HP / +450 TQ</div>
+                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">For built trans &amp; compound turbos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dynamic Stage Details Container -->
+                            <div id="stage-details-box" class="bg-card p-4 rounded border mb-4 text-start"
+                                style="border-color: var(--border-color) !important;">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h5 class="mb-0 text-main" id="stage-detail-title">Stage 1: Heavy Tow &amp; Workhorse Calibration</h5>
+                                </div>
+                                <p class="text-muted small mb-3" id="stage-detail-desc">Engineered for commercial contractors and 5th-wheel haulers pulling 15,000+ lbs. Custom fuel mapping and VGT vane control keeps exhaust gas temperatures (EGTs) under 1,250&deg;F on sustained uphill grades.</p>
+                                <div class="row g-2 text-start">
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center gap-2 small text-muted">
+                                            <i class="fa-solid fa-check text-accent"></i>
+                                            <span id="stage-spec-1">TCM Transmission Line Pressure Increase</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-center gap-2 small text-muted">
+                                            <i class="fa-solid fa-check text-accent"></i>
+                                            <span id="stage-spec-2">Exhaust Brake Retardation Boost</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tuning Action Bar -->
+                            <div class="d-flex flex-wrap gap-3 align-items-center">
+                                <a href="#inquiry-section" class="btn btn-primary-custom book-service-trigger" data-service="tuning">
+                                    <i class="fa-solid fa-bolt me-2"></i>Book Tuning Calibration
+                                </a>
+                                <a href="pricing.html" class="btn btn-outline-light">
+                                    <i class="fa-solid fa-chart-line me-2"></i>Explore Tuning Packages
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 - Heavy-Duty Mechanical & Overhauls (Bento Showcase Cards) -->
+            <section id="overhauls" class="section-padding bg-main">
+                <div class="container">
+                    <div class="text-center mb-5 reveal">
+                        <span class="spec-chip mb-2"><i class="fa-solid fa-gears"></i> Powertrain Mastery</span>
+                        <h2 class="mb-3">Heavy-Duty <span class="text-accent">Mechanical Overhauls</span></h2>
+                        <p class="text-muted mx-auto" style="max-width: 650px;">From frame-off block machining to built Allison transmissions, our master mechanics rebuild commercial powertrains stronger than OEM factory spec.</p>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Bento Card 1: Engine Overhauls -->
+                        <div class="col-lg-6 reveal-left">
+                            <div class="bento-service-card">
+                                <div class="bento-img-header">
+                                    <img src="assets/images/fleet-shop.jpg" alt="Commercial Diesel Engine Rebuild Shop" loading="lazy">
+                                    <span class="bento-card-badge"><i class="fa-solid fa-shield-halved text-accent me-1"></i>2-YR / 24,000-MI WARRANTY</span>
+                                </div>
+                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h4 class="mb-0">In-Frame &amp; Out-of-Frame Rebuilds</h4>
+                                    </div>
+                                    <p class="text-muted small mb-3">Complete teardown, sonic tank degreasing, crankshaft line boring, and blueprint assembly for Cummins ISX/6.7, Powerstroke, and Duramax engines.</p>
+                                    
+                                    <div class="collapse mb-3" id="scopeEngineRebuild">
+                                        <div class="p-3 bg-main rounded border small" style="border-color: var(--border-color) !important;">
+                                            <h6 class="fw-bold mb-2 text-accent">Rebuild Scope Includes:</h6>
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-1 text-muted">
+                                                <li>&bull; Cylinder head resurfacing &amp; magnaflux crack check</li>
+                                                <li>&bull; Balanced forged connecting rods &amp; coated pistons</li>
+                                                <li>&bull; Clevite 77 tri-metal rod and main bearings</li>
+                                                <li>&bull; New OEM oil pump, water pump, and oil cooler</li>
+                                                <li>&bull; Complete hot dyno break-in cycle verification</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
                                         style="border-color: var(--border-color) !important;">
-                                        <h6 class="mb-2"><i class="fa-solid fa-road text-accent me-2"></i> Calibration
-                                        </h6>
-                                        <p class="text-muted small mb-0">TCM tuning for firmer, faster transmission
-                                            shifts.</p>
+                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#scopeEngineRebuild"
+                                            aria-expanded="false" aria-controls="scopeEngineRebuild">
+                                            <i class="fa-solid fa-list-check me-1"></i>View Included Scope <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                                        </button>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger" data-service="repair">
+                                            Book Rebuild
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bento Card 2: Transmission Rebuilds -->
+                        <div class="col-lg-6 reveal-right">
+                            <div class="bento-service-card">
+                                <div class="bento-img-header">
+                                    <img src="assets/images/hero-shop.jpg" alt="Allison Transmission Rebuild Center" loading="lazy">
+                                    <span class="bento-card-badge"><i class="fa-solid fa-circle-check text-accent me-1"></i>BILLET SHAFTS &amp; CONVERTERS</span>
+                                </div>
+                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h4 class="mb-0">Allison &amp; Heavy-Duty Transmissions</h4>
+                                    </div>
+                                    <p class="text-muted small mb-3">Custom built Allison 1000/2000/3000, 48RE/68RFE, and commercial Eaton Fuller units capable of holding 1,000+ lb-ft of heavy hauling torque.</p>
+
+                                    <div class="collapse mb-3" id="scopeTransRebuild">
+                                        <div class="p-3 bg-main rounded border small" style="border-color: var(--border-color) !important;">
+                                            <h6 class="fw-bold mb-2 text-accent">Transmission Scope Includes:</h6>
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-1 text-muted">
+                                                <li>&bull; Triple-disc billet torque converters with furnace-brazed fins</li>
+                                                <li>&bull; Alto Red Eagle heavy-duty friction clutches &amp; Kolene steels</li>
+                                                <li>&bull; TransGo / Sonnax recalibrated valve body &amp; solenoid pack</li>
+                                                <li>&bull; Billet input, intermediate, and output shaft upgrades</li>
+                                                <li>&bull; Deep cast aluminum finned oil pan for cooling</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                        style="border-color: var(--border-color) !important;">
+                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#scopeTransRebuild"
+                                            aria-expanded="false" aria-controls="scopeTransRebuild">
+                                            <i class="fa-solid fa-list-check me-1"></i>View Included Scope <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                                        </button>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger" data-service="repair">
+                                            Book Trans Service
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bento Card 3: Cooling Systems -->
+                        <div class="col-md-6 col-lg-6 reveal-left">
+                            <div class="bento-service-card">
+                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 50px; height: 50px; font-size: 1.25rem;">
+                                            <i class="fa-solid fa-fan"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Cooling &amp; Thermal Management</h5>
+                                            <span class="small text-muted">Severe Duty Cooling Systems</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-3">Triple-core all-aluminum welded radiators, high-output water pumps, and electric fan conversion packages to eliminate heat soak under heavy grades.</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="spec-chip">Aluminum Radiators</span>
+                                        <span class="spec-chip">Trans Coolers</span>
+                                        <span class="spec-chip">Thermostats</span>
+                                    </div>
+                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                        style="border-color: var(--border-color) !important;">
+                                        <a href="pricing.html" class="small text-muted text-decoration-none hover-accent">Rates from $320</a>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="repair">Book Cooling</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bento Card 4: Commercial Brakes & Suspension -->
+                        <div class="col-md-6 col-lg-6 reveal-right">
+                            <div class="bento-service-card">
+                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 50px; height: 50px; font-size: 1.25rem;">
+                                            <i class="fa-solid fa-car-burst"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Brakes &amp; Heavy-Duty Suspension</h5>
+                                            <span class="small text-muted">DOT Safety Certified Solutions</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-3">Commercial air brake chamber overhauls, slack adjusters, heavy-duty leaf springs, airbags, and steer-axle kingpin rebuilds ensuring strict DOT compliance.</p>
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="spec-chip">Air Brake Chambers</span>
+                                        <span class="spec-chip">Heavy Leaf Springs</span>
+                                        <span class="spec-chip">DOT Certified</span>
+                                    </div>
+                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                        style="border-color: var(--border-color) !important;">
+                                        <a href="pricing.html" class="small text-muted text-decoration-none hover-accent">Rates from $280</a>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="repair">Book Brakes</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,45 +457,149 @@
                 </div>
             </section>
 
-            <!-- Section 4 - Emissions Repair (Staggered Grid) -->
-            <section class="section-padding bg-main">
-                <div class="container text-center reveal">
-                    <div class="d-inline-block text-accent mb-3 fw-bold text-uppercase tracking-wider">Compliance &
-                        Reliability</div>
-                    <h2 class="mb-5">Emissions <span class="text-accent">Repair</span></h2>
+            <!-- Section 5 - Emissions, DPF, DEF & Aftertreatment (Emergency Matrix & Deep-Dive) -->
+            <section id="emissions" class="section-padding bg-card border-top border-bottom"
+                style="border-color: var(--border-color) !important;">
+                <div class="container">
+                    <!-- Emergency Derate Help Banner -->
+                    <div class="emissions-alert-banner mb-5 text-light reveal">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-8">
+                                <div class="d-inline-flex align-items-center gap-2 text-accent fw-bold text-uppercase mb-2">
+                                    <i class="fa-solid fa-triangle-exclamation"></i> Emergency Speed Derate Service
+                                </div>
+                                <h3 class="text-light mb-2">Truck Trapped in 50-Mile / 5-MPH Speed Limp Mode?</h3>
+                                <p class="mb-0 text-muted" style="color: #d1d5db !important;">We offer priority same-day emergency intake for DEF system faults, clogged DPF regenerations, and NOx sensor failures to get commercial rigs rolling.</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <a href="#inquiry-section" class="btn btn-primary-custom btn-lg book-service-trigger" data-service="emissions">
+                                    <i class="fa-solid fa-phone-volume me-2"></i>Emergency Intake
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="row g-4 text-start justify-content-center">
+                    <div class="text-center mb-5 reveal">
+                        <span class="spec-chip mb-2"><i class="fa-solid fa-leaf"></i> Compliant &amp; Reliable</span>
+                        <h2 class="mb-3">Emissions &amp; <span class="text-accent">Aftertreatment</span></h2>
+                        <p class="text-muted mx-auto" style="max-width: 650px;">Modern diesel emissions systems operate under extreme pressure and soot loads. We clean, restore, and calibrate components to prevent costly road breakdowns.</p>
+                    </div>
+
+                    <div class="row g-4 text-start justify-content-center mb-5">
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 stagger-item">
-                                <i class="fa-solid fa-smog text-accent fs-1 mb-3"></i>
-                                <h5 class="mb-3 fw-bold text-uppercase">DPF Services</h5>
-                                <p class="text-muted mb-0">Diesel Particulate Filter cleaning, regeneration
-                                    troubleshooting, and replacement.</p>
+                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                                <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-smog"></i></div>
+                                <h5 class="mb-2 fw-bold text-uppercase">DPF Ultrasonic Cleaning</h5>
+                                <p class="text-muted small mb-4">Pneumatic ash blasting followed by high-temperature thermal baking. Recovers up to 98% of original flow capacity without filter damage.</p>
+                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    style="border-color: var(--border-color) !important;">
+                                    <span class="spec-chip">Flow Bench Tested</span>
+                                    <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book DPF</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 stagger-item">
-                                <i class="fa-solid fa-recycle text-accent fs-1 mb-3"></i>
-                                <h5 class="mb-3 fw-bold text-uppercase">EGR Maintenance</h5>
-                                <p class="text-muted mb-0">Exhaust Gas Recirculation valve cleaning, cooler testing, and
-                                    complete replacement.</p>
+                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                                <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-recycle"></i></div>
+                                <h5 class="mb-2 fw-bold text-uppercase">EGR Valve &amp; Coolers</h5>
+                                <p class="text-muted small mb-4">Ultrasonic carbon descaling and pressure testing. Replacement of cracked internal cooling passages that cause mysterious coolant loss.</p>
+                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    style="border-color: var(--border-color) !important;">
+                                    <span class="spec-chip">Pressure Tested</span>
+                                    <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book EGR</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 stagger-item">
-                                <i class="fa-solid fa-vial text-accent fs-1 mb-3"></i>
-                                <h5 class="mb-3 fw-bold text-uppercase">DEF / SCR Systems</h5>
-                                <p class="text-muted mb-0">Diesel Exhaust Fluid pump repair, heater replacements, and
-                                    NOX sensor calibration.</p>
+                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                                <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-vial"></i></div>
+                                <h5 class="mb-2 fw-bold text-uppercase">DEF / SCR Dosing Systems</h5>
+                                <p class="text-muted small mb-4">Diesel exhaust fluid pump rebuilds, doser valve flow tests, crystal buildup removal, and precision upstream/downstream NOx sensor replacements.</p>
+                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    style="border-color: var(--border-color) !important;">
+                                    <span class="spec-chip">Refractometer Checked</span>
+                                    <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book SCR</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 5 - Book a Service (Parallax fade) -->
+            <!-- Section 6 - Fleet & Preventive Maintenance (Schedule Matrix) -->
+            <section id="fleet" class="section-padding bg-main">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-5 reveal-left">
+                            <div class="hud-visual-frame">
+                                <img src="assets/images/service-maintenance.jpg" alt="Commercial Fleet Truck Maintenance"
+                                    class="img-fluid" loading="lazy">
+                                <div class="hud-overlay-badge hud-badge-bottom-right">
+                                    <i class="fa-solid fa-shield-halved text-accent me-2"></i>Comprehensive DOT Inspection Ready
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 reveal-right">
+                            <span class="spec-chip mb-3"><i class="fa-solid fa-truck-ramp-box"></i> Fleet Reliability</span>
+                            <h2 class="mb-3">Fleet Preventive <span class="text-accent">Maintenance</span></h2>
+                            <p class="text-muted mb-4">Unscheduled downtime drains profitability. We partner with commercial fleets and independent owner-operators to manage scheduled PM services, oil analysis, and federal safety compliance.</p>
+
+                            <!-- PM Tiers Matrix -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <div class="pm-tier-card text-start h-100">
+                                        <div class="fw-bold text-accent mb-1">PM-A Service</div>
+                                        <h6 class="mb-2">Minor Inspection</h6>
+                                        <ul class="list-unstyled small text-muted mb-0 d-flex flex-column gap-1">
+                                            <li>&bull; Lube, oil &amp; filter</li>
+                                            <li>&bull; Chassis lubrication</li>
+                                            <li>&bull; Tire pressure check</li>
+                                            <li>&bull; 30-point safety check</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pm-tier-card text-start h-100 border-accent" style="border-color: var(--accent) !important;">
+                                        <div class="fw-bold text-accent mb-1">PM-B Service</div>
+                                        <h6 class="mb-2">Full Drivetrain</h6>
+                                        <ul class="list-unstyled small text-muted mb-0 d-flex flex-column gap-1">
+                                            <li>&bull; Everything in PM-A</li>
+                                            <li>&bull; Fuel &amp; water filters</li>
+                                            <li>&bull; Differential fluids</li>
+                                            <li>&bull; Brake stroke measure</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pm-tier-card text-start h-100">
+                                        <div class="fw-bold text-accent mb-1">PM-C Service</div>
+                                        <h6 class="mb-2">Annual DOT Audit</h6>
+                                        <ul class="list-unstyled small text-muted mb-0 d-flex flex-column gap-1">
+                                            <li>&bull; Everything in PM-B</li>
+                                            <li>&bull; Valve lash adjustment</li>
+                                            <li>&bull; Coolant chemical audit</li>
+                                            <li>&bull; Federal DOT certification</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3 align-items-center">
+                                <a href="#inquiry-section" class="btn btn-primary-custom book-service-trigger" data-service="repair">
+                                    <i class="fa-solid fa-file-contract me-2"></i>Schedule Fleet Program
+                                </a>
+                                <a href="pricing.html" class="btn btn-outline-custom">
+                                    <i class="fa-solid fa-table me-2"></i>View Maintenance Pricing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7 - Book a Service / Experience the Difference -->
             <section class="section-padding position-relative text-center text-light parallax-fade"
-                style="background-color: var(--primary);">
+                style="background-color: var(--primary);" id="inquiry-section">
                 <div class="position-absolute w-100 h-100 top-0 start-0 opacity-25"
                     style="background-image: url('https://images.pexels.com/photos/2769213/pexels-photo-2769213.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-size: cover; background-position: center; background-attachment: fixed;">
                 </div>
@@ -263,26 +607,26 @@
                     <h2 class="display-5 fw-bold mb-4 text-light" style="font-family: var(--font-heading);">EXPERIENCE
                         THE <span class="text-accent">DIFFERENCE</span></h2>
                     <p class="lead mb-5 mx-auto" style="max-width: 700px; color: #d1d5db;">Send us a quick inquiry
-                        detailing your truck's make, model, and symptoms. Our service advisors will get back to you
-                        immediately.</p>
-                    <div class="bg-card p-4 rounded shadow-lg mx-auto border"
-                        style="max-width: 600px; border-color: var(--accent) !important;">
-                        <form>
+                        detailing your truck's make, model, and symptoms. Our master diesel technicians will get back to you immediately.</p>
+                    <div id="booking-card-wrapper" class="bg-card p-4 rounded shadow-lg mx-auto border"
+                        style="max-width: 600px; border-color: var(--accent) !important; transition: box-shadow 0.4s ease, border-color 0.4s ease;">
+                        <form class="inquiry-form text-start">
                             <div class="mb-3">
-                                <input type="text" class="form-control bg-dark text-light border-secondary"
-                                    placeholder="Your Name" required>
+                                <label for="inq-name" class="visually-hidden">Your Name</label>
+                                <input id="inq-name" type="text" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control bg-dark text-light border-secondary"
-                                    placeholder="Phone Number" required>
+                                <label for="inq-phone" class="visually-hidden">Phone Number</label>
+                                <input id="inq-phone" type="tel" class="form-control" placeholder="Phone Number" required>
                             </div>
                             <div class="mb-3">
-                                <select class="form-select bg-dark text-light border-secondary" required>
+                                <label for="inq-service" class="visually-hidden">Service Needed</label>
+                                <select id="inq-service" class="form-select" required>
                                     <option value="" disabled selected>Select Service Needed</option>
                                     <option value="diagnostic">Engine Diagnostics</option>
                                     <option value="tuning">Performance Tuning</option>
-                                    <option value="repair">Heavy-Duty Repair</option>
-                                    <option value="emissions">Emissions Service</option>
+                                    <option value="repair">Heavy-Duty Repair &amp; Overhauls</option>
+                                    <option value="emissions">Emissions &amp; DPF Service</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary-custom w-100">Request Appointment</button>
@@ -415,6 +759,7 @@
         </style>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
+                // Zoom reveal intersection observer
                 const zoomObserver = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -425,6 +770,120 @@
 
                 document.querySelectorAll('.zoom-reveal').forEach(el => {
                     zoomObserver.observe(el);
+                });
+
+                // Interactive Tuning Stage Switcher
+                const stageData = {
+                    1: {
+                        title: "Stage 1: Heavy Tow & Workhorse Calibration",
+                        desc: "Engineered for commercial contractors and 5th-wheel haulers pulling 15,000+ lbs. Custom fuel mapping and VGT vane control keeps exhaust gas temperatures (EGTs) under 1,250°F on sustained uphill grades.",
+                        spec1: "TCM Transmission Line Pressure Boost (+25 PSI)",
+                        spec2: "Variable Vane Exhaust Brake Retardation"
+                    },
+                    2: {
+                        title: "Stage 2: Street Performance & Daily Efficiency",
+                        desc: "Our most popular balanced calibration. Immediate throttle response, enhanced turbo spooling, and optimized injection timing curves that yield a proven 10-14% improvement in steady-state highway fuel economy.",
+                        spec1: "Crisp Low-RPM Boost Response (+125 HP)",
+                        spec2: "Highway Cruise Fuel Economy Optimization"
+                    },
+                    3: {
+                        title: "Stage 3: Competition & Extreme Tow Calibration",
+                        desc: "High-output custom mapping designed for upgraded compound turbochargers (S300/S400), stroker CP3 fuel pumps, and fully built Allison or 68RFE transmissions holding over 1,000 lb-ft torque.",
+                        spec1: "Dual CP3 Fuel Rail Pressure Delivery",
+                        spec2: "Custom Torque Converter Lockup Mapping"
+                    }
+                };
+
+                const stageCards = document.querySelectorAll('.stage-selector-card');
+                const titleEl = document.getElementById('stage-detail-title');
+                const descEl = document.getElementById('stage-detail-desc');
+                const spec1El = document.getElementById('stage-spec-1');
+                const spec2El = document.getElementById('stage-spec-2');
+
+                stageCards.forEach(card => {
+                    card.addEventListener('click', () => {
+                        const stage = card.getAttribute('data-stage');
+                        if (!stageData[stage]) return;
+
+                        stageCards.forEach(c => {
+                            c.classList.remove('active');
+                            const badge = c.querySelector('.badge');
+                            if (badge) {
+                                badge.className = 'badge bg-secondary text-white';
+                            }
+                        });
+
+                        card.classList.add('active');
+                        const activeBadge = card.querySelector('.badge');
+                        if (activeBadge) {
+                            activeBadge.className = 'badge bg-accent text-white';
+                        }
+
+                        // Animate detail update
+                        const detailsBox = document.getElementById('stage-details-box');
+                        if (detailsBox) {
+                            detailsBox.style.opacity = '0.5';
+                            setTimeout(() => {
+                                titleEl.textContent = stageData[stage].title;
+                                descEl.textContent = stageData[stage].desc;
+                                spec1El.textContent = stageData[stage].spec1;
+                                spec2El.textContent = stageData[stage].spec2;
+                                detailsBox.style.opacity = '1';
+                            }, 150);
+                        }
+                    });
+
+                    // Keyboard accessibility
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            card.click();
+                        }
+                    });
+                });
+
+                // Book Service Smart Trigger (Pre-selects dropdown & smooth scrolls)
+                const bookTriggers = document.querySelectorAll('.book-service-trigger');
+                const serviceSelect = document.getElementById('inq-service');
+                const bookingWrapper = document.getElementById('booking-card-wrapper');
+                const nameInput = document.getElementById('inq-name');
+
+                bookTriggers.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const targetService = btn.getAttribute('data-service');
+                        if (serviceSelect && targetService) {
+                            serviceSelect.value = targetService;
+                        }
+
+                        if (bookingWrapper) {
+                            bookingWrapper.style.boxShadow = '0 0 0 4px var(--accent)';
+                            setTimeout(() => {
+                                bookingWrapper.style.boxShadow = '';
+                                if (nameInput) nameInput.focus();
+                            }, 1000);
+                        }
+                    });
+                });
+
+                // Quick Navigation Active State on Scroll
+                const navButtons = document.querySelectorAll('.service-nav-btn');
+                const serviceSections = document.querySelectorAll('section[id]');
+
+                window.addEventListener('scroll', () => {
+                    let currentId = '';
+                    const scrollPos = window.scrollY + 160;
+
+                    serviceSections.forEach(section => {
+                        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                            currentId = section.getAttribute('id');
+                        }
+                    });
+
+                    if (currentId) {
+                        navButtons.forEach(btn => {
+                            btn.classList.toggle('active', btn.getAttribute('href') === `#${currentId}`);
+                        });
+                    }
                 });
             });
         </script>

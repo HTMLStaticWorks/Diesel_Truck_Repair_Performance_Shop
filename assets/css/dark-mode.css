@@ -87,3 +87,15 @@ body.dark-mode .theme-icon-dark {
 .theme-icon-light {
   display: block;
 }
+
+/* Accordion Dark Mode Adaptation */
+body.dark-mode .accordion-button::after {
+  filter: invert(1) brightness(1.5);
+}
+body.dark-mode .service-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(249, 115, 22, 0.15);
+  color: var(--accent);
+}
+body.dark-mode .service-nav-bar {
+  background: rgba(31, 41, 55, 0.95);
+}
