@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 80" fill="none">
+  <rect width="230" height="80" rx="8" fill="transparent"/>
+  <!-- Detroit Diesel Gear & Arrow Wheel -->
+  <g transform="translate(15, 15)">
+    <circle cx="25" cy="25" r="22" stroke="#dc2626" stroke-width="3" fill="#111827"/>
+    <circle cx="25" cy="25" r="14" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <path d="M12 25 H38 M25 12 V38" stroke="#dc2626" stroke-width="3"/>
+    <polygon points="25,5 31,13 19,13" fill="#dc2626"/>
+    <polygon points="45,25 37,19 37,31" fill="#dc2626"/>
+    <polygon points="25,45 19,37 31,37" fill="#dc2626"/>
+    <polygon points="5,25 13,31 13,19" fill="#dc2626"/>
+  </g>
+  <text x="75" y="40" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">DETROIT</text>
+  <text x="75" y="56" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#dc2626" style="fill:#dc2626 !important;" letter-spacing="3">DIESEL POWER</text>
+</svg>

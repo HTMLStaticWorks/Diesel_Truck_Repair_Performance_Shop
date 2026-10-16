@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=8">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
 
@@ -33,17 +33,18 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"
-                style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">
-                <!-- Simple vector logo for diesel/gear -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    style="width: 30px; height: 30px; fill: var(--accent);">
-                    <path
-                        d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
-                </svg>
-                TORQUE
+            <a class="navbar-brand-badge" href="index.html">
+                <div class="brand-emblem-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px; fill: var(--accent);">
+                        <path d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                    </svg>
+                </div>
+                <div class="brand-title-wrap">
+                    <span class="brand-name">TORQUE <span class="text-accent">DIESEL</span></span>
+                    <span class="brand-sub">HEAVY REPAIR &bull; DYNO LAB</span>
+                </div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -128,7 +129,148 @@
                 </div>
             </section>
 
-            <!-- Section 2 - Diesel Expertise -->
+            <!-- Section 2 - Supported Diesel Platforms & OEM Brands -->
+            <section class="section-padding bg-card border-bottom" style="border-color: var(--border-color) !important;">
+                <div class="container">
+                    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal">
+                        <div>
+                            <span class="text-accent fw-bold text-uppercase small" style="letter-spacing: 2px;">
+                                <i class="fa-solid fa-screwdriver-wrench me-2"></i>OEM Software &amp; Powertrains
+                            </span>
+                            <h2 class="mb-2 mt-1">Supported <span class="text-accent">Manufacturers &amp; Platforms</span></h2>
+                            <p class="text-muted mb-0">Dealer-level diagnostics, custom EFI Live / HP Tuners calibrations, and factory rebuild support.</p>
+                        </div>
+                        <a href="brands.html" class="btn btn-outline-custom mt-3 mt-md-0">
+                            View All Supported Brands <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3 g-lg-4 justify-content-center">
+                        <!-- 1. Cummins -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/cummins.svg?v=3" alt="Cummins Diesel" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Cummins</h6>
+                                <p class="brand-item-spec">ISB 6.7L &bull; 5.9L &bull; X15</p>
+                            </a>
+                        </div>
+                        <!-- 2. Powerstroke -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/powerstroke.svg?v=3" alt="Ford Powerstroke" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Powerstroke</h6>
+                                <p class="brand-item-spec">6.7L &bull; 6.0L &bull; 6.4L V8</p>
+                            </a>
+                        </div>
+                        <!-- 3. Duramax -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/duramax.svg?v=3" alt="GM Duramax" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Duramax</h6>
+                                <p class="brand-item-spec">L5P &bull; LML &bull; LBZ V8</p>
+                            </a>
+                        </div>
+                        <!-- 4. Caterpillar -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/caterpillar.svg?v=3" alt="Caterpillar Diesel" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Caterpillar</h6>
+                                <p class="brand-item-spec">C12 &bull; C13 &bull; C15 ACERT</p>
+                            </a>
+                        </div>
+                        <!-- 5. Detroit Diesel -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/detroit-diesel.svg?v=3" alt="Detroit Diesel" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Detroit Diesel</h6>
+                                <p class="brand-item-spec">DD13 &bull; DD15 &bull; DD16</p>
+                            </a>
+                        </div>
+                        <!-- 6. PACCAR -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/paccar.svg?v=3" alt="PACCAR" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">PACCAR</h6>
+                                <p class="brand-item-spec">MX-11 &bull; MX-13 Heavy</p>
+                            </a>
+                        </div>
+                        <!-- 7. Freightliner -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/freightliner.svg?v=3" alt="Freightliner Trucks" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Freightliner</h6>
+                                <p class="brand-item-spec">Cascadia &bull; M2 106 &bull; 114SD</p>
+                            </a>
+                        </div>
+                        <!-- 8. Mack -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/mack.svg?v=3" alt="Mack Trucks" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Mack Trucks</h6>
+                                <p class="brand-item-spec">MP7 &bull; MP8 &bull; mDRIVE</p>
+                            </a>
+                        </div>
+                        <!-- 9. Volvo -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/volvo.svg?v=3" alt="Volvo Trucks" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Volvo Trucks</h6>
+                                <p class="brand-item-spec">VNL &bull; D11 &bull; D13 &bull; I-Shift</p>
+                            </a>
+                        </div>
+                        <!-- 10. Allison -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/allison.svg?v=3" alt="Allison Transmission" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Allison Trans</h6>
+                                <p class="brand-item-spec">1000 &bull; 2000 &bull; 3000/4000</p>
+                            </a>
+                        </div>
+                        <!-- 11. Bosch -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/bosch.svg?v=3" alt="Bosch Diesel Systems" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Bosch Diesel</h6>
+                                <p class="brand-item-spec">CP3 &bull; CP4 &bull; CRIN Fuel</p>
+                            </a>
+                        </div>
+                        <!-- 12. Holset -->
+                        <div class="col reveal stagger-item">
+                            <a href="brands.html" class="brand-item-card">
+                                <div class="brand-plate">
+                                    <img src="assets/images/brands/holset.svg?v=3" alt="Holset Turbochargers" loading="lazy">
+                                </div>
+                                <h6 class="brand-item-title">Holset Turbo</h6>
+                                <p class="brand-item-spec">HE351VE &bull; Compound VGT</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 - Diesel Expertise -->
             <section class="section-padding bg-main">
                 <div class="container">
                     <div class="text-center mb-5 reveal">

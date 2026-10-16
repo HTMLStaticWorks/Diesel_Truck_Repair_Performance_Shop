@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" fill="none">
+  <rect width="220" height="80" rx="8" fill="transparent"/>
+  <!-- Allison Transmission Badge -->
+  <g transform="translate(15, 20)">
+    <path d="M0 0 L20 40 L40 0 H28 L20 20 L12 0 Z" fill="#2563eb"/>
+  </g>
+  <text x="65" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">ALLISON</text>
+  <text x="66" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#60a5fa" style="fill:#60a5fa !important;" letter-spacing="1.5">HEAVY TRANSMISSIONS</text>
+</svg>

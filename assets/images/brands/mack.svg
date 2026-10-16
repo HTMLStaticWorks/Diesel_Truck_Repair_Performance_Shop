@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="transparent"/>
+  <!-- Mack Trucks Bulldog Silhouette Badge -->
+  <g transform="translate(15, 18)">
+    <rect width="40" height="42" rx="6" fill="#b45309" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M12 28 C12 20 18 14 26 14 C32 14 36 18 36 24 C36 28 32 32 26 32 H16 Z" fill="#ffffff"/>
+    <circle cx="28" cy="20" r="2" fill="#b45309"/>
+  </g>
+  <text x="65" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="24" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="2">MACK</text>
+  <text x="66" y="58" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9" fill="#f59e0b" style="fill:#f59e0b !important;" letter-spacing="2">TRUCKS USA</text>
+</svg>

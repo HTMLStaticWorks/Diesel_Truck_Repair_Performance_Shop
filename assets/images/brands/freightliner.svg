@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="none">
+  <rect width="240" height="80" rx="8" fill="transparent"/>
+  <!-- Freightliner Emblem -->
+  <g transform="translate(15, 20)">
+    <path d="M0 10 L20 0 L40 10 L40 30 L20 40 L0 30 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M10 16 L20 10 L30 16 L30 26 L20 32 L10 26 Z" fill="#ffffff"/>
+  </g>
+  <text x="65" y="42" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">FREIGHTLINER</text>
+  <text x="66" y="58" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9" fill="#38bdf8" style="fill:#38bdf8 !important;" letter-spacing="2">HEAVY-DUTY TRUCKS</text>
+</svg>

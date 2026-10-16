@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" fill="none">
+  <rect width="220" height="80" rx="8" fill="transparent"/>
+  <!-- Holset & Garrett Turbocharger Badge -->
+  <g transform="translate(18, 18)">
+    <circle cx="22" cy="22" r="18" stroke="#f97316" stroke-width="2.5" fill="none"/>
+    <circle cx="22" cy="22" r="8" fill="#f97316"/>
+    <path d="M22 6 L26 14 M38 22 L30 26 M22 38 L18 30 M6 22 L14 18" stroke="#f97316" stroke-width="2.5"/>
+  </g>
+  <text x="68" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">HOLSET</text>
+  <text x="69" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#f97316" style="fill:#f97316 !important;" letter-spacing="2">TURBOCHARGERS</text>
+</svg>

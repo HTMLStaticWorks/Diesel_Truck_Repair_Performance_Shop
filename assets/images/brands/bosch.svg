@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="transparent"/>
+  <!-- Bosch Diesel Common Rail Badge -->
+  <g transform="translate(18, 20)">
+    <circle cx="20" cy="20" r="18" stroke="#dc2626" stroke-width="3" fill="none"/>
+    <rect x="16" y="8" width="8" height="24" fill="#dc2626"/>
+    <rect x="8" y="16" width="24" height="8" fill="#dc2626"/>
+  </g>
+  <text x="68" y="44" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">BOSCH</text>
+  <text x="69" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#dc2626" style="fill:#dc2626 !important;" letter-spacing="2">DIESEL SYSTEMS</text>
+</svg>

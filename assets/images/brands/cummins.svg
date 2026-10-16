@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="8" fill="transparent"/>
+  <!-- Cummins Red C Block -->
+  <path d="M25 15 H55 V35 H42 V45 H55 V65 H25 Z" fill="#DA291C"/>
+  <path d="M42 30 H65 V50 H42 Z" fill="#DA291C"/>
+  <text x="75" y="48" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#ffffff" style="fill:#ffffff !important;" letter-spacing="1">CUMMINS</text>
+  <text x="76" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9" fill="#DA291C" style="fill:#DA291C !important;" letter-spacing="2">DIESEL POWER</text>
+</svg>

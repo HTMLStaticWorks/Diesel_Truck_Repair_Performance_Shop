@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
 
@@ -26,18 +26,34 @@
 
 <body>
 
-    <!-- Header Navigation (Identical to Home 1) -->
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <!-- Top Announcement & Facility Status Bar -->
+    <div class="top-header-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-accent me-2"></i>1234 Industrial Blvd, Motor City, MI 48201</span>
+                <span><i class="fa-solid fa-clock text-accent me-2"></i>Mon–Fri: 7:00 AM – 6:30 PM | Sat: 8:00 AM – 2:00 PM</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <span class="live-status-pill"><span class="pulse-dot"></span> 8 HEAVY BAYS OPERATIONAL</span>
+                <span class="text-white-50">|</span>
+                <a href="tel:5551234567" class="fw-bold"><i class="fa-solid fa-phone text-accent me-1"></i> (555) 123-4567</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"
-                style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">
-                <!-- Simple vector logo for diesel/gear -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    style="width: 30px; height: 30px; fill: var(--accent);">
-                    <path
-                        d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
-                </svg>
-                TORQUE
+            <a class="navbar-brand-badge" href="index.html">
+                <div class="brand-emblem-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px; fill: var(--accent);">
+                        <path d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                    </svg>
+                </div>
+                <div class="brand-title-wrap">
+                    <span class="brand-name">TORQUE <span class="text-accent">DIESEL</span></span>
+                    <span class="brand-sub">HEAVY REPAIR &bull; DYNO LAB</span>
+                </div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,10 +73,10 @@
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing Guide</a>
+                        <a class="nav-link" href="brands.html">Supported Brands</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="brands.html">Brands</a>
+                        <a class="nav-link" href="pricing.html">Pricing Guide</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -68,16 +84,16 @@
                 </ul>
 
                 <div class="header-controls mt-3 mt-lg-0">
-                    <!-- Theme Toggle -->
-                    <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">
+                    <button id="theme-toggle" class="control-btn" aria-label="Toggle Dark or Light Theme" title="Switch Theme">
                         <i class="fa-solid fa-moon theme-icon-light"></i>
                         <i class="fa-solid fa-sun theme-icon-dark"></i>
                     </button>
-                    <!-- RTL Toggle (using icon) -->
-                    <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL">
+                    <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL View" title="Switch Reading Direction">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
-                    <a href="contact.html" class="btn btn-primary-custom ms-lg-3">Book Now</a>
+                    <a href="contact.html" class="btn btn-primary-custom ms-lg-2">
+                        <i class="fa-solid fa-calendar-check me-2"></i>Book Bay Service
+                    </a>
                 </div>
             </div>
         </div>
@@ -224,39 +240,39 @@
                     </div>
 
                     <div class="row g-4 justify-content-center">
-                        <div class="col-lg-8 reveal-left">
-                            <article class="hd-tile hd-tile-lg shadow" tabindex="0">
+                        <div class="col-lg-4 col-md-6 reveal-left">
+                            <article class="hd-tile shadow" tabindex="0">
                                 <img src="https://images.pexels.com/photos/28852335/pexels-photo-28852335.jpeg"
-                                    alt="Engine and transmission rebuild" class="hd-tile-img" loading="lazy">
+                                    alt="Engine and transmission rebuild" class="hd-tile-img" loading="lazy"
+                                    onerror="this.onerror=null;this.src='assets/images/service-turbo-fuel.jpg';">
                                 <span class="hd-tile-badge"><i class="fa-solid fa-gears"></i></span>
-                                <div class="hd-tile-body p-4 p-md-5">
-                                    <h3 class="text-light mb-2">Engine &amp; Transmission Rebuilds</h3>
-                                    <p class="hd-tile-desc text-light mb-0">Full frame-off capability for major
-                                        powertrain overhauls.</p>
+                                <div class="hd-tile-body p-4">
+                                    <h4 class="text-light mb-2 fw-bold">Engine &amp; Transmission</h4>
+                                    <p class="hd-tile-desc text-light mb-0 small">Full frame-off capability for major powertrain overhauls and rebuilds.</p>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column gap-4 reveal-right">
-                            <article class="hd-tile hd-tile-sm shadow-sm" tabindex="0">
-                                <img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        <div class="col-lg-4 col-md-6 reveal">
+                            <article class="hd-tile shadow" tabindex="0">
+                                <img src="assets/images/dyno-tuning.jpg"
                                     alt="Cooling system service" class="hd-tile-img" loading="lazy"
                                     onerror="this.onerror=null;this.src='assets/images/service-turbo-fuel.jpg';">
                                 <span class="hd-tile-badge"><i class="fa-solid fa-fan"></i></span>
                                 <div class="hd-tile-body p-4">
-                                    <h5 class="text-light mb-2">Cooling Systems</h5>
-                                    <p class="hd-tile-desc text-light mb-0 small">Radiator replacement, water pumps,
-                                        and thermal management.</p>
+                                    <h4 class="text-light mb-2 fw-bold">Cooling<br>Systems</h4>
+                                    <p class="hd-tile-desc text-light mb-0 small">Radiator replacement, water pumps, and thermal management.</p>
                                 </div>
                             </article>
-                            <article class="hd-tile hd-tile-sm shadow-sm" tabindex="0">
-                                <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        </div>
+                        <div class="col-lg-4 col-md-6 reveal-right">
+                            <article class="hd-tile shadow" tabindex="0">
+                                <img src="assets/images/engine-build.jpg"
                                     alt="Brake and suspension service" class="hd-tile-img" loading="lazy"
                                     onerror="this.onerror=null;this.src='assets/images/service-maintenance.jpg';">
                                 <span class="hd-tile-badge"><i class="fa-solid fa-car-burst"></i></span>
                                 <div class="hd-tile-body p-4">
-                                    <h5 class="text-light mb-2">Brake &amp; Suspension</h5>
-                                    <p class="hd-tile-desc text-light mb-0 small">Heavy-duty leaf springs, airbags, and
-                                        commercial braking systems.</p>
+                                    <h4 class="text-light mb-2 fw-bold">Brake &amp; Suspension</h4>
+                                    <p class="hd-tile-desc text-light mb-0 small">Heavy-duty leaf springs, airbags, and commercial braking systems.</p>
                                 </div>
                             </article>
                         </div>
