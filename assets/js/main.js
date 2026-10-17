@@ -18,12 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.add('no-theme-transition');
+            document.body.classList.add('no-theme-transition');
             body.classList.toggle('dark-mode');
             if (body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
             } else {
                 localStorage.setItem('theme', 'light');
             }
+            // Trigger instant paint without transition
+            void document.body.offsetHeight;
+            requestAnimationFrame(() => {
+                document.documentElement.classList.remove('no-theme-transition');
+                document.body.classList.remove('no-theme-transition');
+            });
         });
     }
     

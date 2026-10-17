@@ -38,13 +38,47 @@ html {
 }
 
 html, body {
-    
   font-family: var(--font-body);
   color: var(--text-main);
   background-color: var(--bg-main);
   line-height: 1.6;
-  
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Disable transitions when toggling theme for instant sudden mode change */
+.no-theme-transition,
+.no-theme-transition *,
+.no-theme-transition *::before,
+.no-theme-transition *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Z-Index Layering Helpers */
+.z-index-1 {
+  z-index: 1 !important;
+}
+.z-index-2 {
+  z-index: 2 !important;
+}
+.z-index-3 {
+  z-index: 3 !important;
+}
+
+/* Ensure hero section background images stay strictly behind text and CTA buttons */
+.home-hero > div:first-child,
+.hero-section > div:first-child,
+.services-hero > div:first-child,
+.pricing-hero > div:first-child {
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.home-hero > .container,
+.hero-section > .container,
+.services-hero > .container,
+.pricing-hero > .container {
+  position: relative;
+  z-index: 2 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal), background-color var(--transition-normal), border-color var(--transition-normal);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .card-custom:hover {
@@ -136,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-custom {
   background-color: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
-  transition: background-color var(--transition-normal), border-color var(--transition-normal);
   padding: 15px 0;
 }
 
@@ -329,13 +362,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary-custom:not(.btn-sm) {
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
     color: #ffffff !important;
     border: 2px solid var(--accent);
 }
 
 .btn-primary-custom:not(.btn-sm):hover {
-    background-color: var(--accent-hover);
+    background-color: var(--accent-hover) !important;
     border-color: var(--accent-hover);
     color: #ffffff !important;
     transform: translateY(-2px);
@@ -355,7 +388,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-light.btn:not(.btn-sm) {
-    background-color: transparent;
+    background-color: rgba(17, 24, 39, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     color: #ffffff !important;
     border: 2px solid rgba(255, 255, 255, 0.85);
 }
@@ -944,9 +979,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none !important;
   box-shadow: none !important;
   transition: all 0.25s ease !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: none !important;
   min-width: 44px !important;
   min-height: 44px !important;
 }
@@ -975,6 +1008,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tablet & Mobile Collapse Drawer Styling (below 1200px) */
 @media (max-width: 1199.98px) {
+  .navbar-toggler {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  .navbar-custom > .container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+  }
+  .navbar-brand-badge {
+    flex-shrink: 0;
+    max-width: calc(100% - 65px);
+  }
   .navbar-collapse {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -1038,8 +1089,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Desktop spacing tweaks */
+/* Desktop spacing tweaks (1200px and above) */
 @media (min-width: 1200px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+  .navbar-brand-badge {
+    max-width: none;
+  }
   .navbar-nav .nav-link {
     padding: 0.5rem 0.65rem;
     font-size: 0.9rem;
@@ -1048,23 +1105,6 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-nav {
     gap: 0.25rem;
   }
-}
-
-/* Ensure brand badge and toggler are always on a single horizontal row */
-.navbar-custom > .container {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  flex-wrap: wrap !important;
-}
-.navbar-brand-badge {
-  flex-shrink: 0;
-  max-width: calc(100% - 65px);
-}
-.navbar-toggler {
-  flex-shrink: 0;
-  margin-left: auto;
 }
 
 
