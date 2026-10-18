@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css?v=9">
-    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=25">
+    <link rel="stylesheet" href="assets/css/dark-mode.css?v=25">
     <link rel="stylesheet" href="assets/css/rtl.css">
 
     <!-- Favicon -->
@@ -30,15 +30,16 @@
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"
-                style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">
-                <!-- Simple vector logo for diesel/gear -->
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    style="width: 30px; height: 30px; fill: var(--accent);">
-                    <path
-                        d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
-                </svg>
-                TORQUE
+            <a class="navbar-brand-badge" href="index.html">
+                <div class="brand-emblem-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px; fill: var(--accent);">
+                        <path d="M19.1 12.9c.1-.3.1-.6.1-.9 0-.3 0-.6-.1-.9l2.1-1.6c.2-.2.2-.4.1-.6l-2-3.5c-.1-.2-.3-.3-.5-.2l-2.5 1c-.5-.4-1.1-.7-1.7-1l-.4-2.6c0-.2-.2-.4-.4-.4h-4c-.2 0-.4.2-.4.4l-.4 2.6c-.6.3-1.2.6-1.7 1l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.6l2.1 1.6c-.1.3-.1.6-.1.9 0 .3 0 .6.1.9l-2.1 1.6c-.2.2-.2.4-.1.6l2 3.5c.1.2.3.3.5.2l2.5-1c.5.4 1.1.7 1.7 1l.4 2.6c0 .2.2.4.4.4h4c.2 0 .4-.2.4-.4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.6l-2.1-1.6zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                    </svg>
+                </div>
+                <div class="brand-title-wrap">
+                    <span class="brand-name">TORQUE <span class="text-accent">DIESEL</span></span>
+                    <span class="brand-sub">HEAVY REPAIR • DYNO LAB</span>
+                </div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -105,8 +106,8 @@
             </section>
             <!-- Section 1.5 - Interactive Category Quick Jump Bar -->
             <nav class="service-nav-bar" aria-label="Services Category Navigation">
-                <div class="container">
-                    <div class="service-nav-list justify-content-lg-center">
+                <div class="container-fluid px-3 px-md-4 px-xl-5">
+                    <div class="service-nav-list">
                         <a href="#diagnostics" class="service-nav-btn active"><i class="fa-solid fa-laptop-medical"></i> Engine Diagnostics</a>
                         <a href="#tuning" class="service-nav-btn"><i class="fa-solid fa-gauge-high"></i> Performance Tuning</a>
                         <a href="#overhauls" class="service-nav-btn"><i class="fa-solid fa-gears"></i> Heavy-Duty Rebuilds</a>
@@ -206,24 +207,24 @@
             </section>
 
             <!-- Section 3 - Performance Tuning Lab (Dynamic Stage Selector) -->
-            <section id="tuning" class="section-padding text-light position-relative"
-                style="background-color: var(--primary); overflow: hidden;">
+            <section id="tuning" class="section-padding bg-card border-top border-bottom position-relative"
+                style="border-color: var(--border-color) !important; overflow: hidden;">
                 <div class="container position-relative z-index-2">
                     <div class="text-center mb-5 reveal">
-                        <span class="spec-chip mb-2" style="background: rgba(249,115,22,0.2);"><i class="fa-solid fa-gauge-high"></i> Dyno Calibrated Power</span>
-                        <h2 class="text-light mb-3">Performance <span class="text-accent">Tuning Lab</span></h2>
-                        <p class="text-muted mx-auto" style="max-width: 650px; color: #9ca3af !important;">Precision calibrations engineered for massive low-end torque, lowered EGTs, and uncompromising towing stamina.</p>
+                        <span class="spec-chip mb-2"><i class="fa-solid fa-gauge-high"></i> Dyno Calibrated Power</span>
+                        <h2 class="mb-3">Performance <span class="text-accent">Tuning Lab</span></h2>
+                        <p class="text-muted mx-auto" style="max-width: 650px;">Precision calibrations engineered for massive low-end torque, lowered EGTs, and uncompromising towing stamina.</p>
                     </div>
 
                     <div class="row g-4 align-items-center mb-5">
                         <div class="col-lg-5 reveal-left">
-                            <div class="hud-visual-frame border-secondary">
+                            <div class="hud-visual-frame">
                                 <img src="assets/images/service-turbo-fuel.jpg" alt="Diesel Turbocharger and Fuel Injector Tuning"
                                     class="img-fluid" loading="lazy">
-                                <div class="hud-overlay-badge hud-badge-top-left" style="background: rgba(0,0,0,0.85);">
+                                <div class="hud-overlay-badge hud-badge-top-left">
                                     <i class="fa-solid fa-fire text-accent me-2"></i><strong>DYNO VERIFIED</strong> +300 TQ GAINS
                                 </div>
-                                <div class="hud-overlay-badge hud-badge-bottom-right" style="background: rgba(0,0,0,0.85);">
+                                <div class="hud-overlay-badge hud-badge-bottom-right">
                                     <span class="pulse-dot"></span>SOTF Multi-Position Maps
                                 </div>
                             </div>
@@ -238,9 +239,9 @@
                                             <span class="badge bg-accent text-white">Stage 1</span>
                                             <i class="fa-solid fa-weight-hanging text-accent"></i>
                                         </div>
-                                        <h6 class="mb-1 text-light">Heavy Towing</h6>
+                                        <h6 class="mb-1">Heavy Towing</h6>
                                         <div class="h5 text-accent fw-bold mb-1">+65 HP / +180 TQ</div>
-                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">Safe EGT control for heavy 5th-wheels.</p>
+                                        <p class="text-muted small mb-0">Safe EGT control for heavy 5th-wheels.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 d-flex">
@@ -249,9 +250,9 @@
                                             <span class="badge bg-secondary text-white">Stage 2</span>
                                             <i class="fa-solid fa-road text-accent"></i>
                                         </div>
-                                        <h6 class="mb-1 text-light">Street &amp; Daily</h6>
+                                        <h6 class="mb-1">Street &amp; Daily</h6>
                                         <div class="h5 text-accent fw-bold mb-1">+125 HP / +270 TQ</div>
-                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">Rapid turbo spool &amp; +12% MPG.</p>
+                                        <p class="text-muted small mb-0">Rapid turbo spool &amp; +12% MPG.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 d-flex">
@@ -260,29 +261,28 @@
                                             <span class="badge bg-secondary text-white">Stage 3</span>
                                             <i class="fa-solid fa-trophy text-accent"></i>
                                         </div>
-                                        <h6 class="mb-1 text-light">Competition</h6>
+                                        <h6 class="mb-1">Competition</h6>
                                         <div class="h5 text-accent fw-bold mb-1">+200+ HP / +450 TQ</div>
-                                        <p class="text-muted small mb-0" style="color: #9ca3af !important;">For built trans &amp; compound turbos.</p>
+                                        <p class="text-muted small mb-0">For built trans &amp; compound turbos.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Dynamic Stage Details Container -->
-                            <div id="stage-details-box" class="bg-card p-4 rounded border mb-4 text-start"
-                                style="border-color: var(--border-color) !important;">
+                            <div id="stage-details-box" class="p-4 rounded border mb-4 text-start">
                                 <div class="d-flex align-items-center mb-2">
-                                    <h5 class="mb-0 text-main" id="stage-detail-title">Stage 1: Heavy Tow &amp; Workhorse Calibration</h5>
+                                    <h5 class="mb-0 fw-bold" id="stage-detail-title">Stage 1: Heavy Tow &amp; Workhorse Calibration</h5>
                                 </div>
-                                <p class="text-muted small mb-3" id="stage-detail-desc">Engineered for commercial contractors and 5th-wheel haulers pulling 15,000+ lbs. Custom fuel mapping and VGT vane control keeps exhaust gas temperatures (EGTs) under 1,250&deg;F on sustained uphill grades.</p>
+                                <p class="small mb-3 text-muted" id="stage-detail-desc">Engineered for commercial contractors and 5th-wheel haulers pulling 15,000+ lbs. Custom fuel mapping and VGT vane control keeps exhaust gas temperatures (EGTs) under 1,250&deg;F on sustained uphill grades.</p>
                                 <div class="row g-2 text-start">
                                     <div class="col-sm-6">
-                                        <div class="d-flex align-items-center gap-2 small text-muted">
+                                        <div class="d-flex align-items-center gap-2 small">
                                             <i class="fa-solid fa-check text-accent"></i>
                                             <span id="stage-spec-1">TCM Transmission Line Pressure Increase</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="d-flex align-items-center gap-2 small text-muted">
+                                        <div class="d-flex align-items-center gap-2 small">
                                             <i class="fa-solid fa-check text-accent"></i>
                                             <span id="stage-spec-2">Exhaust Brake Retardation Boost</span>
                                         </div>
@@ -295,7 +295,7 @@
                                 <a href="#inquiry-section" class="btn btn-primary-custom book-service-trigger" data-service="tuning">
                                     <i class="fa-solid fa-bolt me-2"></i>Book Tuning Calibration
                                 </a>
-                                <a href="pricing.html" class="btn btn-outline-light">
+                                <a href="pricing.html" class="btn btn-outline-custom">
                                     <i class="fa-solid fa-chart-line me-2"></i>Explore Tuning Packages
                                 </a>
                             </div>
@@ -321,7 +321,7 @@
                                     <img src="assets/images/fleet-shop.jpg" alt="Commercial Diesel Engine Rebuild Shop" loading="lazy">
                                     <span class="bento-card-badge"><i class="fa-solid fa-shield-halved text-accent me-1"></i>2-YR / 24,000-MI WARRANTY</span>
                                 </div>
-                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <div class="p-3 p-sm-4 flex-grow-1 d-flex flex-column">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <h4 class="mb-0">In-Frame &amp; Out-of-Frame Rebuilds</h4>
                                     </div>
@@ -340,14 +340,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    <div class="mt-auto pt-3 pb-1 border-top bento-card-footer d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3"
                                         style="border-color: var(--border-color) !important;">
-                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold"
+                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold text-start"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#scopeEngineRebuild"
                                             aria-expanded="false" aria-controls="scopeEngineRebuild">
                                             <i class="fa-solid fa-list-check me-1"></i>View Included Scope <i class="fa-solid fa-chevron-down ms-1 small"></i>
                                         </button>
-                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger" data-service="repair">
+                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger w-100 w-sm-auto" data-service="repair">
                                             Book Rebuild
                                         </a>
                                     </div>
@@ -362,7 +362,7 @@
                                     <img src="assets/images/hero-shop.jpg" alt="Allison Transmission Rebuild Center" loading="lazy">
                                     <span class="bento-card-badge"><i class="fa-solid fa-circle-check text-accent me-1"></i>BILLET SHAFTS &amp; CONVERTERS</span>
                                 </div>
-                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <div class="p-3 p-sm-4 flex-grow-1 d-flex flex-column">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <h4 class="mb-0">Allison &amp; Heavy-Duty Transmissions</h4>
                                     </div>
@@ -381,14 +381,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    <div class="mt-auto pt-3 pb-1 border-top bento-card-footer d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3"
                                         style="border-color: var(--border-color) !important;">
-                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold"
+                                        <button class="btn btn-sm btn-link text-accent p-0 text-decoration-none fw-bold text-start"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#scopeTransRebuild"
                                             aria-expanded="false" aria-controls="scopeTransRebuild">
                                             <i class="fa-solid fa-list-check me-1"></i>View Included Scope <i class="fa-solid fa-chevron-down ms-1 small"></i>
                                         </button>
-                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger" data-service="repair">
+                                        <a href="#inquiry-section" class="btn btn-sm btn-primary-custom book-service-trigger w-100 w-sm-auto" data-service="repair">
                                             Book Trans Service
                                         </a>
                                     </div>
@@ -399,7 +399,7 @@
                         <!-- Bento Card 3: Cooling Systems -->
                         <div class="col-md-6 col-lg-6 reveal-left">
                             <div class="bento-service-card">
-                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <div class="p-3 p-sm-4 flex-grow-1 d-flex flex-column">
                                     <div class="d-flex align-items-center gap-3 mb-3">
                                         <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center"
                                             style="width: 50px; height: 50px; font-size: 1.25rem;">
@@ -416,10 +416,10 @@
                                         <span class="spec-chip">Trans Coolers</span>
                                         <span class="spec-chip">Thermostats</span>
                                     </div>
-                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    <div class="mt-auto pt-3 pb-1 border-top bento-card-footer d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 gap-sm-3"
                                         style="border-color: var(--border-color) !important;">
                                         <a href="pricing.html" class="small text-muted text-decoration-none hover-accent">Rates from $320</a>
-                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="repair">Book Cooling</a>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger w-100 w-sm-auto" data-service="repair">Book Cooling</a>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +428,7 @@
                         <!-- Bento Card 4: Commercial Brakes & Suspension -->
                         <div class="col-md-6 col-lg-6 reveal-right">
                             <div class="bento-service-card">
-                                <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <div class="p-3 p-sm-4 flex-grow-1 d-flex flex-column">
                                     <div class="d-flex align-items-center gap-3 mb-3">
                                         <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center"
                                             style="width: 50px; height: 50px; font-size: 1.25rem;">
@@ -445,10 +445,10 @@
                                         <span class="spec-chip">Heavy Leaf Springs</span>
                                         <span class="spec-chip">DOT Certified</span>
                                     </div>
-                                    <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                    <div class="mt-auto pt-3 pb-1 border-top bento-card-footer d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 gap-sm-3"
                                         style="border-color: var(--border-color) !important;">
                                         <a href="pricing.html" class="small text-muted text-decoration-none hover-accent">Rates from $280</a>
-                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="repair">Book Brakes</a>
+                                        <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger w-100 w-sm-auto" data-service="repair">Book Brakes</a>
                                     </div>
                                 </div>
                             </div>
@@ -487,11 +487,11 @@
 
                     <div class="row g-4 text-start justify-content-center mb-5">
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                            <div class="card-custom p-3 p-xl-4 h-100 reveal stagger-item d-flex flex-column">
                                 <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-smog"></i></div>
                                 <h5 class="mb-2 fw-bold text-uppercase">DPF Ultrasonic Cleaning</h5>
                                 <p class="text-muted small mb-4">Pneumatic ash blasting followed by high-temperature thermal baking. Recovers up to 98% of original flow capacity without filter damage.</p>
-                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                <div class="mt-auto pt-3 pb-1 border-top d-flex flex-wrap justify-content-between align-items-center gap-2"
                                     style="border-color: var(--border-color) !important;">
                                     <span class="spec-chip">Flow Bench Tested</span>
                                     <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book DPF</a>
@@ -499,11 +499,11 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                            <div class="card-custom p-3 p-xl-4 h-100 reveal stagger-item d-flex flex-column">
                                 <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-recycle"></i></div>
                                 <h5 class="mb-2 fw-bold text-uppercase">EGR Valve &amp; Coolers</h5>
                                 <p class="text-muted small mb-4">Ultrasonic carbon descaling and pressure testing. Replacement of cracked internal cooling passages that cause mysterious coolant loss.</p>
-                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                <div class="mt-auto pt-3 pb-1 border-top d-flex flex-wrap justify-content-between align-items-center gap-2"
                                     style="border-color: var(--border-color) !important;">
                                     <span class="spec-chip">Pressure Tested</span>
                                     <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book EGR</a>
@@ -511,11 +511,11 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <div class="card-custom p-4 h-100 reveal stagger-item d-flex flex-column">
+                            <div class="card-custom p-3 p-xl-4 h-100 reveal stagger-item d-flex flex-column">
                                 <div class="text-accent fs-1 mb-3"><i class="fa-solid fa-vial"></i></div>
                                 <h5 class="mb-2 fw-bold text-uppercase">DEF / SCR Dosing Systems</h5>
                                 <p class="text-muted small mb-4">Diesel exhaust fluid pump rebuilds, doser valve flow tests, crystal buildup removal, and precision upstream/downstream NOx sensor replacements.</p>
-                                <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center"
+                                <div class="mt-auto pt-3 pb-1 border-top d-flex flex-wrap justify-content-between align-items-center gap-2"
                                     style="border-color: var(--border-color) !important;">
                                     <span class="spec-chip">Refractometer Checked</span>
                                     <a href="#inquiry-section" class="btn btn-sm btn-outline-custom book-service-trigger" data-service="emissions">Book SCR</a>
@@ -598,18 +598,18 @@
             </section>
 
             <!-- Section 7 - Book a Service / Experience the Difference -->
-            <section class="section-padding position-relative text-center text-light parallax-fade"
-                style="background-color: var(--primary);" id="inquiry-section">
-                <div class="position-absolute w-100 h-100 top-0 start-0 opacity-25"
-                    style="background-image: url('https://images.pexels.com/photos/2769213/pexels-photo-2769213.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <section class="section-padding position-relative text-center bg-main border-top"
+                id="inquiry-section" style="border-color: var(--border-color) !important;">
+                <div class="position-absolute w-100 h-100 top-0 start-0 opacity-10"
+                    style="background-image: url('https://images.pexels.com/photos/2769213/pexels-photo-2769213.jpeg?auto=compress&cs=tinysrgb&w=1920'); background-size: cover; background-position: center; pointer-events: none;">
                 </div>
                 <div class="container position-relative z-index-2 reveal">
-                    <h2 class="display-5 fw-bold mb-4 text-light" style="font-family: var(--font-heading);">EXPERIENCE
+                    <h2 class="display-5 fw-bold mb-4" style="font-family: var(--font-heading); color: var(--text-main);">EXPERIENCE
                         THE <span class="text-accent">DIFFERENCE</span></h2>
-                    <p class="lead mb-5 mx-auto" style="max-width: 700px; color: #d1d5db;">Send us a quick inquiry
+                    <p class="lead mb-5 mx-auto" style="max-width: 700px; color: var(--text-muted);">Send us a quick inquiry
                         detailing your truck's make, model, and symptoms. Our master diesel technicians will get back to you immediately.</p>
-                    <div id="booking-card-wrapper" class="bg-card p-4 rounded shadow-lg mx-auto border"
-                        style="max-width: 600px; border-color: var(--accent) !important; transition: box-shadow 0.4s ease, border-color 0.4s ease;">
+                    <div id="booking-card-wrapper" class="bg-card p-4 p-md-5 rounded shadow-lg mx-auto border"
+                        style="max-width: 600px; border-color: var(--accent) !important; transition: box-shadow 0.4s ease, border-color 0.4s ease; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;">
                         <form class="inquiry-form text-start">
                             <div class="mb-3">
                                 <label for="inq-name" class="visually-hidden">Your Name</label>

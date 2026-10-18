@@ -3,19 +3,20 @@
    ========================================================================== */
 body.dark-mode {
   /* Overriding variables for dark mode */
+  --primary: #f9fafb;       /* Bright readable text for elements referencing primary */
   --bg-main: #111827;       /* Very dark background */
   --bg-card: #1f2937;       /* Card background */
   --bg-dark: #0f172a;       /* Even darker for sections */
   
   --text-main: #f9fafb;     /* Light text */
-  --text-muted: #9ca3af;    /* Muted text */
+  --text-muted: #d1d5db;    /* High contrast muted text */
   
   --border-color: #374151;  /* Dark borders */
   
   /* Bootstrap overrides */
   --bs-body-color: #f9fafb;
   --bs-body-bg: #111827;
-  --bs-secondary-color: #9ca3af;
+  --bs-secondary-color: #d1d5db;
   --bs-heading-color: #f9fafb;
   --bs-card-bg: #1f2937;
   --bs-border-color: #374151;
